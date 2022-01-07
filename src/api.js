@@ -22,14 +22,13 @@ async function parseWeatherData(city) {
     const weather = await fetchWeather(city);
     
     class parsedWeatherClass {
-        FeelsLike = weather.main.feels_like;
-        Temp = weather.main.temp;
+        City = weather.name;
+        Temp = weather.main.temp + "F";
         Humidity = weather.main.humidity;
         Condition = weather.weather[0].description;
-        Wind = weather.wind;
+        Wind = weather.wind.speed + ' Mph';
     }
     const parsedWeather = new parsedWeatherClass;
-    console.log(parsedWeather);
     return parsedWeather;
 
     }catch(err) {

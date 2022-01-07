@@ -17,9 +17,22 @@ body {
 }
 
 
+#weather {
+    border: 1px solid black;
+    padding: 25px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 .content-wrapper{
     display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-wrapper{

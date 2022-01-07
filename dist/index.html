@@ -8,12 +8,21 @@
     <title>WeatherFetcher</title>
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <div class="search">
+            <p><input id="search" type="text" placeholder="Enter a city"></p>
+            <button id="searchBtn" type="button">Search</button>
+        </div>
     </header>
     <main class="flex-wrapper">
         <div class="content-wrapper">
-
+            <div id="weather">
+                <h1>City</h1>
+                <h2>Temp</h2>
+                <h3>Humidity</h2>
+                <h3>Condition</h3>
+                <h3>Wind</h3>
+            </div>
         </div>
     </main>
     <footer class="footer">

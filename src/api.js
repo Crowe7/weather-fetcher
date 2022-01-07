@@ -27,10 +27,9 @@ async function parseWeatherData(city) {
         Humidity = weather.main.humidity;
         Condition = weather.weather[0].description;
         Wind = weather.wind;
-        Cringe = 'cringe';
     }
     const parsedWeather = new parsedWeatherClass;
-
+    console.log(parsedWeather);
     return parsedWeather;
 
     }catch(err) {

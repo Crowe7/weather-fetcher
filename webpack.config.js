@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     api: './src/api.js',
+    dom: './src/dom.js',
   },
   devtool: 'inline-source-map',
   output: {
